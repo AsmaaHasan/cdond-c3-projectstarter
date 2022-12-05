@@ -16,6 +16,7 @@ commands:
       - run:
           name: Install Ansible
           command: |
+             cd /c/Users/AsmaaHasan
              python3 -m pip install --user ansible  
            
   destroy-environment:
