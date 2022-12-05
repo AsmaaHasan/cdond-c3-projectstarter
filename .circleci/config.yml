@@ -22,7 +22,7 @@ commands:
             sudo apt install ansible -y
            
            
-   install_nodejs:
+  install_nodejs:
     description: Install Node.js
     steps:
       -run:
