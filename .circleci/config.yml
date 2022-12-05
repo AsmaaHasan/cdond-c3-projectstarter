@@ -64,10 +64,9 @@ jobs:
           command: |
              # Your code here
              cd backend
-             npm audit fix
              npm install
              npm run build
-             exit 1
+           
       - save_cache:
           paths: [backend/node_modules]
           key: backend-deps
