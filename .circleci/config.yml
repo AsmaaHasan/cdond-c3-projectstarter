@@ -18,7 +18,6 @@ commands:
           command: |
             sudo apt update
             sudo apt install software-properties-common
-            sudo ppa-purge ppa:ansible/ansible
             sudo add-apt-repository --yes --update ppa:ansible/ansible
             sudo apt install ansible -y
             # curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
