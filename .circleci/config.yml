@@ -79,16 +79,16 @@ jobs:
       #Restore from cache
       #Your job code her
        steps:
-      - checkout
-      - restore_cache:
-          keys: [frontend-deps]
-      - run:
-          name: Front-end unit test
-          command: |
-            # Your code here
-            cd frontend
-            npm install
-            npm test
+        - checkout
+        - restore_cache:
+            keys: [frontend-deps]
+        - run:
+              name: Front-end unit test
+              command: |
+                # Your code here
+                cd frontend
+                npm install
+                npm test
                 
   test-backend:
     docker:
