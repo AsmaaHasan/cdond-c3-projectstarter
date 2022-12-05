@@ -75,10 +75,6 @@ jobs:
     docker:
       - image: circleci/node:13.8.0
     steps:
-      #Checkout code from git
-      #Restore from cache
-      #Your job code her
-       steps:
         - checkout
         - restore_cache:
             keys: [frontend-deps]
@@ -97,7 +93,6 @@ jobs:
       #Checkout code from git
       #Restore from cache
       #Your job code here
-      steps:
       - checkout
       - restore_cache:
           keys: [backend-deps]
