@@ -61,7 +61,7 @@ commands:
     steps:
       - run:
           name: Revert migrations
-          #Add when this will run
+          
           when: on_fail
           command: |
             SUCCESS=$(curl --insecure https://kvdb.io/${KVDB_BUCKET}/migration_<< parameters.Workflow_ID >> )
@@ -240,7 +240,7 @@ jobs:
       - install_awscli
       #Add ssh keys with fingerprint
       - add_ssh_keys:
-          fingerprints: ["cf:e8:47:e5:a3:cd:83:c1:94:d0:9f:83:04:86:a8:82"]
+          fingerprints: ["e3:20:28:88:d3:ae:07:6f:ce:f7:36:93:1e:7b:3d:be"]
           
       #attach workspace
       - attach_workspace:
