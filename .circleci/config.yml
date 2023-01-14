@@ -147,8 +147,8 @@ jobs:
     docker:
       - image: circleci/node:13.8.0
     steps:
-      #Checkout code from git
-      #Restore from cache
+      # checkout code from git
+      # restore from cache
       #Your job code here
       - checkout
       - restore_cache:
@@ -236,7 +236,8 @@ jobs:
       - install_ansible
       #Add ssh keys with fingerprint
       - add_ssh_keys:
-          fingerprints: ["15:b6:61:f6:a5:09:24:55:6e:99:fa:4f:ef:aa:38:87"]
+          fingerprints: ["cf:e8:47:e5:a3:cd:83:c1:94:d0:9f:83:04:86:a8:82"]
+          
       #attach workspace
       - attach_workspace:
           at: ~/
