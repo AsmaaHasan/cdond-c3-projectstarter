@@ -446,7 +446,6 @@ jobs:
       
   cleanup:
     docker:
-     # Docker image here
      - image: cimg/base:stable
     steps:
       - checkout
