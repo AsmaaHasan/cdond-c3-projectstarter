@@ -10,7 +10,7 @@ import { TransformInterceptor } from './modules/common/interceptors/TransformInt
 import * as express from 'express';
 import { ErrorFilter } from './modules/errors/error.filter';
 
-console.log('Hello Project 3!');
+console.log('Hello Project 3, committing to a non-master branch!');
 
 async function bootstrap() {
   const logger = new AppLogger();
