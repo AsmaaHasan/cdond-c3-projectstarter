@@ -444,7 +444,7 @@ jobs:
       - destroy-environment
       - revert-migrations
       
-cleanup:
+ cleanup:
     docker:
      # Docker image here
      - image: cimg/base:stable
@@ -452,7 +452,6 @@ cleanup:
       - checkout
       - install_awscli
       - install_nodejs
-
       - run:
           name: Remove old stacks and files
           command: |
